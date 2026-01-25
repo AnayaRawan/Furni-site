@@ -1,0 +1,60 @@
+:root {
+  --main-font: "Inter";
+}
+body {
+  font-family: var(--main-font);
+}
+/* navbar styles */
+.navbar {
+  background-color: #3b5d50;
+}
+.navbar .navbar-brand {
+  font-size: 32px;
+}
+.navbar .navbar-brand span {
+  opacity: 0.4;
+}
+.navbar .nav-item {
+  margin: 0 15px;
+}
+.navbar .nav-item .nav-link {
+  font-size: 14px;
+  color: white;
+  opacity: 0.55;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.navbar .nav-link.active {
+  opacity: 1;
+}
+.nav-icons i {
+  font-size: 18px;
+}
+.nav-icons li:first-child {
+  margin: 0 20px;
+}
+.navbar .nav-link:hover {
+  opacity: 1;
+}
+@media (min-width: 1000px) {
+  .navbar-nav li a.nav-link:before,
+  .navbar-nav li a.active:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    background: #f9bf29;
+    height: 5px;
+    visibility: hidden;
+    transition: 0.15s all ease-out;
+  }
+  .navbar-nav li a.active:before {
+    visibility: visible;
+  }
+
+  .navbar .nav-link:hover:before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
