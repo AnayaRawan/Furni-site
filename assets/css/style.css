@@ -4,6 +4,16 @@
 body {
   font-family: var(--main-font);
 }
+/* general classes */
+
+.btn {
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #ffffff;
+  background: #2f2f2f;
+  border-color: #2f2f2f;
+}
 /* navbar styles */
 .navbar {
   background-color: #3b5d50;
@@ -57,4 +67,28 @@ body {
     visibility: visible;
     opacity: 1;
   }
+}
+
+/* hero section styles */
+
+.hero {
+  background-color: #3b5d50;
+}
+.hero p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+.hero-btn .shop_now-btn {
+  color: #2f2f2f;
+  background-color: #f9bf29;
+  border-color: #f9bf29;
+}
+.hero-btn .btn-transparent {
+  color: white;
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-width: 2px;
+}
+.hero-btn .btn-transparent:hover{
+    border-color: white;
 }
