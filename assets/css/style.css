@@ -189,3 +189,58 @@ a {
 .popular-products .product-description a {
   color: var(--custom-gray-color);
 }
+
+/* Testimonials section */
+
+.customer-review {
+  line-height: 32px;
+  font-size: 16px;
+}
+.testimonials .customer-info img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.customer-info h3 {
+  font-size: 14px;
+  color: var(--custom-gray-color);
+  margin-bottom: 0;
+}
+.carousel-indicators {
+  bottom: -40px;
+}
+.carousel-indicators [data-bs-target] {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  transition: 0.3s all ease;
+  background-color: #d6d6d6;
+}
+.carousel-indicators .active {
+  background-color: #3b5d50;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 58px;
+  height: 58px;
+  top: 50%;
+  border-radius: 50%;
+  background-color: rgba(59, 93, 80, 0.1);
+  color: var(--custom-gray-color);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  background-color: #3b5d50;
+  color: #ffffff;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 16px;
+}
+
+.carousel-control-next span,
+.carousel-control-prev span {
+  background-image: none; /* إلغاء الافتراضي */
+}
