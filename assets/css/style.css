@@ -12,6 +12,7 @@ body {
 }
 a {
   text-decoration: none;
+  transition: 0.3s all ease;
 }
 /* general classes */
 .section-title {
@@ -131,11 +132,11 @@ a {
   opacity: 0;
 }
 /* when hovering over the item -> the icon moves from its original position 20px down */
-.product-item:hover .plus-icon {
+.product-section .product-item:hover .plus-icon {
   transform: translateY(15px);
   opacity: 1;
 }
-.product-item:hover .product-image {
+.product-section .product-item:hover .product-image {
   transform: translateY(-10px); /*عشان الصورة ترتفع لفوق*/
 }
 
@@ -158,4 +159,33 @@ a {
 .product-section .product-item:hover:before {
   height: 70%;
   transform: scaleY(1);
+}
+
+/* popular-products section styles */
+.popular-products .product-image {
+  margin-right: 10px;
+  flex: 0 0 120px;
+}
+.popular-products .product-image::before {
+  content: "";
+  width: 98px;
+  height: 98px;
+  background-color: #dce5e4;
+  position: absolute;
+  border-radius: 20px;
+  z-index: -1;
+  top: 12px;
+  right: 12px;
+}
+.popular-products .product-name {
+  color: var(--custom-gray-color);
+  font-size: 14px;
+}
+.popular-products .product-description {
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.popular-products .product-description a {
+  color: var(--custom-gray-color);
 }
