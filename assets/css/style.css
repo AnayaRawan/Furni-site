@@ -13,6 +13,7 @@ body {
 a {
   text-decoration: none;
   transition: 0.3s all ease;
+  color: var(--custom-gray-color);
 }
 /* general classes */
 .section-title {
@@ -74,14 +75,18 @@ a {
     height: 5px;
     visibility: hidden;
     transition: 0.15s all ease-out;
+    width: 0%;
   }
   .navbar-nav li a.active:before {
     visibility: visible;
+    opacity: 1;
+    width: calc(100% - 16px); /* عشان اليسار واليمين 8px */
   }
 
   .navbar .nav-link:hover:before {
     visibility: visible;
     opacity: 1;
+    width: calc(100% - 16px); /* عشان اليسار واليمين 8px */ /* ال8 هدول ديفولت بادينج للينك*/
   }
 }
 
@@ -243,4 +248,22 @@ a {
 .carousel-control-next span,
 .carousel-control-prev span {
   background-image: none; /* إلغاء الافتراضي */
+}
+
+/* blogs section */
+
+.blogs .more-blogs {
+  color: var(--custom-gray-color);
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+.blogs .more-blogs:hover {
+  text-decoration: none;
+}
+.blog-item img {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.blog-item img:hover {
+  opacity: 0.7;
 }
