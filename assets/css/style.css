@@ -287,7 +287,7 @@ a {
 .footer .sofa-image img {
   max-width: 380px;
 }
-.footer .subscription_form{
+.footer .subscription_form {
   z-index: 2;
 }
 .footer .subscription_form h3 {
@@ -296,13 +296,17 @@ a {
 .footer .subscription_form h3 i {
   color: #6a6a6a80;
 }
-.footer .subscription_form .form-control {
+.footer .subscription_form .form-control,
+.contactUs .form-control
+{
   border-radius: 10px;
   height: 50px;
   font-family: var(--main-font);
   font-size: 14px;
 }
-.footer .subscription_form .form-control:focus {
+.footer .subscription_form .form-control:focus,
+.contactUs .form-control:focus
+{
   outline: none;
   border-color: var(--custom-green-color);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
@@ -339,4 +343,28 @@ a {
 }
 .footer .footer-links li a {
   color: var(--custom-gray-color);
+}
+
+/* contact us section */
+.contact-info i {
+  background-color: var(--custom-green-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  line-height: 50px;
+  aspect-ratio: 1;
+}
+.contactUs-form textarea {
+  min-height: 100px;
+}
+.contactUs .submit-btn{
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+.contactUs .submit-btn:hover{
+  opacity: 1;
+}
+.contactUs .submit-btn:focus {
+  background-color: var(--custom-gray-color);
+  color: #ffffff;
 }
