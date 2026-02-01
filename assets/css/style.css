@@ -1,6 +1,7 @@
 :root {
   --main-font: "Inter";
   --custom-gray-color: #2f2f2f;
+  --custom-green-color: #3b5d50;
 }
 body {
   font-family: var(--main-font);
@@ -16,8 +17,11 @@ a {
   color: var(--custom-gray-color);
 }
 /* general classes */
-.section-title {
+.gray-title {
   color: var(--custom-gray-color);
+}
+.green-text {
+  color: var(--custom-green-color);
 }
 .btn {
   font-weight: 600;
@@ -34,7 +38,7 @@ a {
 }
 /* navbar styles */
 .navbar {
-  background-color: #3b5d50;
+  background-color: var(--custom-green-color);
 }
 .navbar .navbar-brand {
   font-size: 32px;
@@ -86,14 +90,16 @@ a {
   .navbar .nav-link:hover:before {
     visibility: visible;
     opacity: 1;
-    width: calc(100% - 16px); /* عشان اليسار واليمين 8px */ /* ال8 هدول ديفولت بادينج للينك*/
+    width: calc(
+      100% - 16px
+    ); /* عشان اليسار واليمين 8px */ /* ال8 هدول ديفولت بادينج للينك*/
   }
 }
 
 /* hero section styles */
 
 .hero {
-  background-color: #3b5d50;
+  background-color: var(--custom-green-color);
 }
 .hero p {
   color: rgba(255, 255, 255, 0.5);
@@ -222,7 +228,7 @@ a {
   background-color: #d6d6d6;
 }
 .carousel-indicators .active {
-  background-color: #3b5d50;
+  background-color: var(--custom-green-color);
 }
 .carousel-control-next,
 .carousel-control-prev {
@@ -237,7 +243,7 @@ a {
 }
 .carousel-control-next:hover,
 .carousel-control-prev:hover {
-  background-color: #3b5d50;
+  background-color: var(--custom-green-color);
   color: #ffffff;
 }
 .carousel-control-next-icon,
@@ -266,4 +272,71 @@ a {
 }
 .blog-item img:hover {
   opacity: 0.7;
+}
+
+/* footer section */
+.footer {
+  padding: 7rem 0;
+  background-color: white;
+}
+.footer .sofa-image {
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
+.footer .sofa-image img {
+  max-width: 380px;
+}
+.footer .subscription_form{
+  z-index: 2;
+}
+.footer .subscription_form h3 {
+  font-size: 18px;
+}
+.footer .subscription_form h3 i {
+  color: #6a6a6a80;
+}
+.footer .subscription_form .form-control {
+  border-radius: 10px;
+  height: 50px;
+  font-family: var(--main-font);
+  font-size: 14px;
+}
+.footer .subscription_form .form-control:focus {
+  outline: none;
+  border-color: var(--custom-green-color);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.footer .subscription_form .subscribe-btn {
+  border-radius: 10px;
+  background-color: var(--custom-green-color);
+  border-color: var(--custom-green-color);
+}
+.footer .subscription_form .subscribe-btn:hover {
+  background: #314d43;
+  border-color: #314d43;
+}
+.footer .footer-logo .footer-brand {
+  font-size: 32px;
+}
+.footer .social-icons li a {
+  background: #dce5e4;
+  border-radius: 50%;
+  padding: 12px;
+}
+.footer .social-icons li a:hover {
+  background: var(--custom-green-color);
+  color: #ffffff;
+}
+@media screen and (min-width: 1000px) {
+  .footer .footer-right {
+    margin-top: 54px;
+  }
+}
+
+.footer .footer-links li {
+  margin-bottom: 10px;
+}
+.footer .footer-links li a {
+  color: var(--custom-gray-color);
 }
