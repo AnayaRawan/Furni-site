@@ -118,6 +118,19 @@ a {
 .hero-btn .btn-transparent:hover {
   border-color: white;
 }
+.hero .hero-img img {
+  z-index: 2;
+}
+.hero .hero-img::after {
+  content: "";
+  position: absolute;
+  width: 255px;
+  height: 217px;
+  background-image: url("../images/icons/dots-light.svg");
+  right: -20px;
+  top: 0;
+  z-index: 1;
+}
 /* product section styles */
 .product-section {
   padding: 7rem 0 5rem 0;
