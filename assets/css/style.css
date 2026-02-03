@@ -187,16 +187,16 @@ a {
 
 /* Why Choose Us section styles */
 
-.whyUs-section .service-item h3 {
+.whyUs-section .service-item h3 , .services-section .service-item h3{
   color: var(--custom-gray-color);
   font-size: 14px;
 }
-.whyUs-section .service-item p {
+.whyUs-section .service-item p, .services-section .service-item p {
   font-size: 14px;
   line-height: 22px;
   color: #6a6a6a;
 }
-.whyUs-section .service-icon::before {
+.whyUs-section .service-icon::before , .services-section .service-icon::before {
   content: "";
   position: absolute;
   width: 28px;
@@ -207,7 +207,7 @@ a {
   left: 18px;
   z-index: -1;
 }
-.whyUs-section .service-icon i {
+.whyUs-section .service-icon i , .services-section .service-icon i {
   font-size: 28px;
 }
 .whyUs-section .whyUs-image img {
