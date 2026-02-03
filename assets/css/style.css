@@ -417,3 +417,36 @@ a {
   background-color: var(--custom-gray-color);
   color: #ffffff;
 }
+
+/* team members section */
+.team-member{
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow:  0 0 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.team-member:hover{
+  box-shadow:  0 0 15px rgba(0,0,0,0.2);
+}
+.team-member img{
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.team-member img:hover{
+  opacity: 0.7;
+}
+.member-info .member-name{
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+.member-info a{
+  width: fit-content;
+}
+.member-info a:hover{
+  text-decoration: none !important;
+}
+.team-member p{
+  font-size: 14px;
+  line-height: 22px;
+  color: #6a6a6a;
+}
