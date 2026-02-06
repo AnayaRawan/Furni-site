@@ -104,7 +104,8 @@ a {
 .hero p {
   color: rgba(255, 255, 255, 0.5);
 }
-.hero-btn .shop_now-btn , .cart-section .shop_now-btn{
+.hero-btn .shop_now-btn,
+.cart-section .shop_now-btn {
   color: var(--custom-gray-color);
   background-color: #f9bf29;
   border-color: #f9bf29;
@@ -489,25 +490,28 @@ a {
   border: none;
   height: auto !important;
 }
-.cart-section .table .btn{
+.cart-section .table .btn {
   padding: 0 !important;
 }
 /* Chrome, Edge, Safari */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 } /* عشان اخفي الاسهم الي جوا الانبت*/
 
-.cart-section .coupon input{
+.cart-section .coupon input,
+.checkout-section input {
   border-radius: 10px;
   height: 50px;
   font-size: 14px;
 }
-.cart-section .coupon .apply-coupon-btn {
+.cart-section .coupon .apply-coupon-btn,
+.checkout-section .apply-coupon-btn {
   background-color: var(--custom-green-color);
   border-color: var(--custom-green-color);
   color: #ffffff;
+  font-size: 14px;
 }
 /* thank you page */
 .thank-you-section {
@@ -519,7 +523,7 @@ input[type=number]::-webkit-outer-spin-button {
 .thank-you-section p {
   font-size: 20px;
 }
-.thank-you-icon::before{
+.thank-you-icon::before {
   content: "";
   position: absolute;
   width: 50px;
@@ -528,4 +532,11 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: rgba(59, 93, 80, 0.2);
   top: -20px;
   z-index: -1;
+}
+/* Checkout page */
+.checkout-section {
+  padding: 7rem 0;
+}
+.your-order tbody {
+  border-top-color: black;
 }
