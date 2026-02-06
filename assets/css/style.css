@@ -186,6 +186,11 @@ a {
   transform: scaleY(1);
 }
 
+.pagination .active a{
+  background-color: var(--custom-green-color)!important;
+  border-color: var(--custom-green-color);
+  color: white !important;
+}
 /* Why Choose Us section styles */
 
 .whyUs-section .service-item h3,
