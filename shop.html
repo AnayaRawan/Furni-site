@@ -87,12 +87,12 @@
         <div class="product-section py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-4">
+                    <div class="col-lg-3 col-md-4 filter-col">
                         <div class="d-none d-md-block">
-                            <div class="filters p-4 bg-white">
-                                <h2 class="gray-title fw-semibold  border-bottom mb-4">Filters</h2>
+                            <div class="filters p-4">
+                                <h2 class="gray-title fw-semibold border-bottom mb-5">Filters</h2>
                                 <div class="filter-item mb-5">
-                                    <h4 class="gray-title fw-semibold">Categories</h4>
+                                    <h4 class="gray-title fw-semibold h5">Categories</h4>
                                     <div class="form-check text-black ps-5"><input type="checkbox"
                                             class="form-check-input" id="formCheck-1" /><label class="form-check-label"
                                             for="formCheck-1">Single seat</label></div>
@@ -104,7 +104,7 @@
                                             for="formCheck-3">Sleeping or lying</label></div>
                                 </div>
                                 <div class="filter-item my-5">
-                                    <h4 class="gray-title fw-semibold">Brands</h4>
+                                    <h4 class="gray-title fw-semibold h5">Brands</h4>
                                     <div class="form-check text-black ps-5"><input type="checkbox"
                                             class="form-check-input" id="formCheck-5" /><label class="form-check-label"
                                             for="formCheck-5">Minotti</label></div>
@@ -116,7 +116,7 @@
                                             for="formCheck-7">IKEA</label></div>
                                 </div>
                                 <div class="filter-item my-5">
-                                    <h4 class="gray-title fw-semibold">Price</h4>
+                                    <h4 class="gray-title fw-semibold h5">Price</h4>
                                     <input title="price" class="price-range" min="30" max="500" type="range"
                                         name="price" value="100"
                                         oninput="this.nextElementSibling.value = '$' + this.value">
@@ -130,7 +130,7 @@
                             aria-controls="filters" href="#filters" role="button">
                             Filters <i class="fa-solid fa-filter fa-bounce"></i>
                         </a>
-                        <div class="collapse" id="filters">
+                        <div class="collapse filter-col p-4" id="filters">
                             <div class="filters">
                                 <div class="filter-item my-4">
                                     <h3 class="gray-title fw-semibold">Categories</h3>
