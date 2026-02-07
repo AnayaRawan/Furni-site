@@ -94,8 +94,152 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="text-black">Billing Details</h2>
+                    <div class="col-md-6 mb-5 mb-md-0">
+                        <h2 class="text-black mb-3">Billing Details</h2>
+                        <form action="" class="p-3 p-lg-5 bg-white mb-5">
+                            <!-- <div class="row">
+                                <div class="col-md-12"> -->
+                            <label for="country" class="text-black">
+                                Country <span class="text-danger">*</span>
+                            </label>
+                            <select class="form-control" name="country" id="country" title="country">
+                                <option value="">Palestine</option>
+                                <option value="">Jordan</option>
+                                <option value="">Japan</option>
+                                <option value="">China</option>
+                            </select>
+                            <!-- </div> -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="text-black">First Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="firstName" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="text-black">Last Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="lastName" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-md-12"> -->
+                            <label for="compName" class="text-black">Company Name <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" id="compName" class="form-control">
+                            <!-- </div>
+                            <div class="col-md-12"> -->
+                            <label for="address" class="text-black">Address <span class="text-danger">*</span></label>
+                            <input type="text" id="address" class="form-control" placeholder="Street address">
+                            <!-- </div>
+                            <div class="col-md-12 mt-3"> -->
+                            <input type="text" id="apartment" class="form-control mt-2"
+                                placeholder="apartment, suite, unit etc. (optional)">
+                            <!-- </div> -->
+                            <!-- </div> -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="state" class="text-black">State / Country <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="state" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="zip" class="text-black">Posta / Zip <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="zip" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="email" class="text-black">Email Address <span
+                                            class="text-danger">*</span></label>
+                                    <input type="email" id="email" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="tel" class="text-black">Phone <span class="text-danger">*</span></label>
+                                    <input type="tel" id="tel" class="form-control" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="newAccount mt-5">
+                                <label for="create-account" class="text-black d-flex align-items-center column-gap-1">
+                                    <input type="checkbox" name="create-account" id="create-account"
+                                        data-bs-toggle="collapse" href="#createAccount" role="button"
+                                        aria-expanded="false" aria-controls="createAccount">Create an account?
+                                </label>
+                                <div class="collapse" id="createAccount">
+                                    <p>
+                                        Create an account by entering the information below. If you are a returning
+                                        customer please login at the top of the page.
+                                    </p>
+                                    <label for="password" class="text-black">Account Password</label>
+                                    <input type="password" id="password" class="form-control">
+                                </div>
+                            </div>
+                            <div class="shipDiffAdd">
+                                <label for="shipDiffAdd" class="text-black d-flex align-items-center gap-1">
+                                    <input type="checkbox" name="shipDiffAdd" id="shipDiffAdd" data-bs-toggle="collapse"
+                                        href="#ship" role="button" aria-expanded="false" aria-controls="ship">
+                                    Ship To A Different Address?
+                                </label>
+                                <div class="collapse mb-5" id="ship">
+                                    <label for="diffCountry" class="text-black">
+                                        Country <span class="text-danger">*</span>
+                                    </label>
+                                    <select class="form-control" name="diffCountry" id="diffCountry" title="country">
+                                        <option value="">Palestine</option>
+                                        <option value="">Jordan</option>
+                                        <option value="">Japan</option>
+                                        <option value="">China</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="diff_firstName" class="text-black">First Name <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="diff_firstName" class="form-control">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="diff_lastName" class="text-black">Last Name <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="diff_lastName" class="form-control">
+                                        </div>
+                                    </div>
+                                    <label for="diff_compName" class="text-black">Company Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="diff_compName" class="form-control">
+                                    <label for="diff_address" class="text-black">Address <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="diff_address" class="form-control" placeholder="Street address">
+                                    <input type="text" id="diff_apartment" class="form-control mt-2"
+                                        placeholder="apartment, suite, unit etc. (optional)">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="diff_state" class="text-black">State / Country <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="diff_state" class="form-control">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="diff_zip" class="text-black">Posta / Zip <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="diff_zip" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="diff_email" class="text-black">Email Address <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="email" id="diff_email" class="form-control">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="diff_tel" class="text-black">Phone <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="tel" id="diff_tel" class="form-control" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="notes" class="text-black">Order Notes</label>
+                            <textarea class="form-control" cols="30" rows="5" name="order_notes" id="notes"
+                                placeholder="Write your notes here..."></textarea>
+                        </form>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
@@ -200,7 +344,8 @@
                                         </div>
                                     </div>
                                     <div class="place-order my-5">
-                                        <button class="btn place-order-btn" onclick="window.location='thanku.html'">Place Order</button>
+                                        <button class="btn place-order-btn"
+                                            onclick="window.location='thanku.html'">Place Order</button>
                                     </div>
                                 </div>
                             </div>
@@ -210,7 +355,6 @@
             </div>
         </div>
         <!-- Checkout section ends -->
-
     </main>
 
     <!-- footer starts -->
