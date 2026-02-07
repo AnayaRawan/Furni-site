@@ -36,6 +36,20 @@ a {
   background: #222222;
   border-color: #222222;
 }
+.btn:active:focus {
+  color: #000000;
+}
+.form-control {
+  border-radius: 10px;
+  height: 50px;
+  font-family: var(--main-font);
+  font-size: 14px;
+}
+.form-control:focus {
+  outline: none;
+  border-color: var(--custom-green-color);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
 /* navbar styles */
 .navbar {
   background-color: var(--custom-green-color);
@@ -105,7 +119,8 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 .hero-btn .shop_now-btn,
-.cart-section .shop_now-btn {
+.cart-section .shop_now-btn,
+.shop_now-btn:active:focus {
   color: var(--custom-gray-color);
   background-color: #f9bf29;
   border-color: #f9bf29;
@@ -118,6 +133,9 @@ a {
 }
 .hero-btn .btn-transparent:hover {
   border-color: white;
+}
+.hero-btn .btn-transparent:active:focus {
+  color: white;
 }
 .hero .hero-img img {
   z-index: 2;
@@ -135,9 +153,6 @@ a {
 /* product section styles */
 .product-section {
   padding: 7rem 0 5rem 0;
-}
-.product-section .product-name {
-  color: var(--custom-gray-color);
 }
 .product-section .price {
   color: var(--custom-gray-color);
@@ -186,10 +201,13 @@ a {
   transform: scaleY(1);
 }
 
-.pagination .active a{
-  background-color: var(--custom-green-color)!important;
+.pagination .active a {
+  background-color: var(--custom-green-color) !important;
   border-color: var(--custom-green-color);
   color: white !important;
+}
+.pagination .page-link:focus{
+  box-shadow: none;
 }
 /* Why Choose Us section styles */
 
@@ -357,7 +375,7 @@ a {
 .footer .subscription_form h3 i {
   color: #6a6a6a80;
 }
-.footer .subscription_form .form-control,
+/* .footer .subscription_form .form-control,
 .contactUs .form-control {
   border-radius: 10px;
   height: 50px;
@@ -369,15 +387,17 @@ a {
   outline: none;
   border-color: var(--custom-green-color);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 .footer .subscription_form .subscribe-btn {
   border-radius: 10px;
   background-color: var(--custom-green-color);
   border-color: var(--custom-green-color);
 }
-.footer .subscription_form .subscribe-btn:hover {
+.footer .subscription_form .subscribe-btn:hover,
+.footer .subscription_form .subscribe-btn:active:focus {
   background: #314d43;
   border-color: #314d43;
+  color: white;
 }
 .footer .footer-logo .footer-brand {
   font-size: 32px;
@@ -403,7 +423,9 @@ a {
 .footer .footer-links li a {
   color: var(--custom-gray-color);
 }
-
+.footer .footer-links li a:hover {
+    color: rgba(47, 47, 47, 0.5);
+}
 /* contact us section */
 .contact-info i {
   background-color: var(--custom-green-color);
@@ -480,7 +502,6 @@ a {
   max-width: 150px;
 }
 .cart-section .table .product-name {
-  color: var(--custom-gray-color);
   font-size: 16px;
 }
 .cart-section .table input[type="number"] {
@@ -544,4 +565,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .your-order tbody {
   border-top-color: black;
+}
+/* shop page */
+
+.price-range {
+  accent-color: #4caf50;
 }
