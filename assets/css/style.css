@@ -574,3 +574,24 @@ input[type="number"]::-webkit-outer-spin-button {
 .filter-col{
   background-color: #e8e2d877;
 }
+
+/* product page */
+.checked{
+  color: orange;
+}
+.product-details .product-info .fShipp{
+  text-shadow: 4px 4px 10px #87ada0;
+}
+.product-details .product-info input{
+  max-width: 50px;
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  font-size: 18px;
+}
+.product-details .product-info .quantity button{
+  font-size: 18px;
+  border: 0;
+  padding:0 10px;
+  background-color: rgba(130, 150, 157, 0.678);
+}
