@@ -84,130 +84,226 @@
         </div>
         <!-- hero section ends -->
         <!-- product section starts -->
-        <div class="product-section">
+        <div class="product-section py-5">
             <div class="container">
-                <div class="row row-gap-3">
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-                        <div class="product-item text-center position-relative">
-                            <a href="cart.html" class="d-flex flex-column product">
-                                <img src="./assets/images/shop/product-1.webp"
-                                    class="img-fluid mb-4 product-image position-relative" alt="product image">
-                                <h3 class="product-name fw-semibold fs-6 text-capitalize">Nordic Chair</h3>
-                                <span class="price">$50.00</span>
-                                <span
-                                    class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
-                                    <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
-                                </span>
-                            </a>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="d-none d-md-block">
+                            <div class="filters p-4 bg-white">
+                                <h2 class="gray-title fw-semibold  border-bottom mb-4">Filters</h2>
+                                <div class="filter-item mb-5">
+                                    <h4 class="gray-title fw-semibold">Categories</h4>
+                                    <div class="form-check text-black ps-5"><input type="checkbox"
+                                            class="form-check-input" id="formCheck-1" /><label class="form-check-label"
+                                            for="formCheck-1">Single seat</label></div>
+                                    <div class="form-check text-black ps-5"><input type="checkbox"
+                                            class="form-check-input" id="formCheck-2" /><label class="form-check-label"
+                                            for="formCheck-2">Multiple seats</label></div>
+                                    <div class="form-check text-black ps-5"><input type="checkbox"
+                                            class="form-check-input" id="formCheck-3" /><label class="form-check-label"
+                                            for="formCheck-3">Sleeping or lying</label></div>
+                                </div>
+                                <div class="filter-item my-5">
+                                    <h4 class="gray-title fw-semibold">Brands</h4>
+                                    <div class="form-check text-black ps-5"><input type="checkbox"
+                                            class="form-check-input" id="formCheck-5" /><label class="form-check-label"
+                                            for="formCheck-5">Minotti</label></div>
+                                    <div class="form-check text-black ps-5"><input type="checkbox"
+                                            class="form-check-input" id="formCheck-6" /><label class="form-check-label"
+                                            for="formCheck-6">Cassina</label></div>
+                                    <div class="form-check text-black ps-5"><input type="checkbox"
+                                            class="form-check-input" id="formCheck-7" /><label class="form-check-label"
+                                            for="formCheck-7">IKEA</label></div>
+                                </div>
+                                <div class="filter-item my-5">
+                                    <h4 class="gray-title fw-semibold">Price</h4>
+                                    <input title="price" class="price-range" min="30" max="500" type="range"
+                                        name="price" value="100"
+                                        oninput="this.nextElementSibling.value = '$' + this.value">
+                                    <output class="ps-2 gray-title h6">$100</output>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="product-item text-center position-relative">
-                            <a href="cart.html" class="d-flex flex-column product">
-                                <img src="./assets/images/shop/product-2.webp"
-                                    class="img-fluid mb-4 product-image position-relative" alt="product image">
-                                <h3 class="product-name fw-semibold fs-6 text-capitalize">Kruzo Aero Chair</h3>
-                                <span class="price">$78.00</span>
-                                <span
-                                    class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
-                                    <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
-                                </span>
-                            </a>
+                    <div class="d-md-none">
+                        <a class="btn d-md-none filter-collapse" data-bs-toggle="collapse"
+                            aria-expanded="false" aria-controls="filters" href="#filters" role="button">
+                            Filters <i class="fa-solid fa-filter fa-bounce"></i>
+                        </a>
+                        <div class="collapse" id="filters">
+                            <div class="filters">
+                                <div class="filter-item my-4">
+                                    <h3 class="gray-title fw-semibold">Categories</h3>
+                                    <div class="form-check"><input type="checkbox" class="form-check-input"
+                                            id="formCheck-1" /><label class="form-check-label" for="formCheck-1">Single
+                                            seat</label></div>
+                                    <div class="form-check"><input type="checkbox" class="form-check-input"
+                                            id="formCheck-2" /><label class="form-check-label"
+                                            for="formCheck-2">Multiple seats</label></div>
+                                    <div class="form-check"><input type="checkbox" class="form-check-input"
+                                            id="formCheck-3" /><label class="form-check-label"
+                                            for="formCheck-3">Sleeping or lying</label></div>
+                                </div>
+                                <div class="filter-item my-4">
+                                    <h3 class="gray-title fw-semibold">Brands</h3>
+                                    <div class="form-check"><input type="checkbox" class="form-check-input"
+                                            id="formCheck-5" /><label class="form-check-label"
+                                            for="formCheck-5">Minotti</label></div>
+                                    <div class="form-check"><input type="checkbox" class="form-check-input"
+                                            id="formCheck-6" /><label class="form-check-label"
+                                            for="formCheck-6">Cassina</label></div>
+                                    <div class="form-check"><input type="checkbox" class="form-check-input"
+                                            id="formCheck-7" /><label class="form-check-label"
+                                            for="formCheck-7">IKEA</label></div>
+                                </div>
+                                <div class="filter-item my-4">
+                                    <h4 class="gray-title fw-semibold">Price</h4>
+                                    <input title="price" class="price-range" min="30" max="500" type="range"
+                                        name="price" id="priceRange" value="100"
+                                        oninput="this.nextElementSibling.value = '$' + this.value">
+                                    <output class="ps-2 gray-title">$100</output>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="product-item text-center position-relative">
-                            <a href="cart.html" class="d-flex flex-column product">
-                                <img src="./assets/images/shop/product-3.webp"
-                                    class="img-fluid mb-4 product-image position-relative" alt="product image">
-                                <h3 class="product-name fw-semibold fs-6 text-capitalize">Ergonomic Chair</h3>
-                                <span class="price">$43.00</span>
-                                <span
-                                    class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
-                                    <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
-                                </span>
-                            </a>
+                    <div class="col-lg-9 col-md-8 mt-3 mt-lg-0">
+                        <div class="row">
+                            <div class="col-md-4 me-0 ms-auto mb-5">
+                                <div class="input-group">
+                                     <input type="text" name="search" id="searchInput" placeholder="Search products..."
+                                    class="form-control">
+                                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                </div>
+                               
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="product-item text-center position-relative">
-                            <a href="cart.html" class="d-flex flex-column product">
-                                <img src="./assets/images/shop/product-1.webp"
-                                    class="img-fluid mb-4 product-image position-relative" alt="product image">
-                                <h3 class="product-name fw-semibold fs-6 text-capitalize">Nordic Chair</h3>
-                                <span class="price">$50.00</span>
-                                <span
-                                    class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
-                                    <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="product-item text-center position-relative">
-                            <a href="cart.html" class="d-flex flex-column product">
-                                <img src="./assets/images/shop/product-2.webp"
-                                    class="img-fluid mb-4 product-image position-relative" alt="product image">
-                                <h3 class="product-name fw-semibold fs-6 text-capitalize">Kruzo Aero Chair</h3>
-                                <span class="price">$78.00</span>
-                                <span
-                                    class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
-                                    <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="product-item text-center position-relative">
-                            <a href="cart.html" class="d-flex flex-column product">
-                                <img src="./assets/images/shop/product-3.webp"
-                                    class="img-fluid mb-4 product-image position-relative" alt="product image">
-                                <h3 class="product-name fw-semibold fs-6 text-capitalize">Ergonomic Chair</h3>
-                                <span class="price">$43.00</span>
-                                <span
-                                    class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
-                                    <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="product-item text-center position-relative">
-                            <a href="cart.html" class="d-flex flex-column product">
-                                <img src="./assets/images/shop/product-1.webp"
-                                    class="img-fluid mb-4 product-image position-relative" alt="product image">
-                                <h3 class="product-name fw-semibold fs-6 text-capitalize">Nordic Chair</h3>
-                                <span class="price">$50.00</span>
-                                <span
-                                    class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
-                                    <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="product-item text-center position-relative">
-                            <a href="cart.html" class="d-flex flex-column product">
-                                <img src="./assets/images/shop/product-2.webp"
-                                    class="img-fluid mb-4 product-image position-relative" alt="product image">
-                                <h3 class="product-name fw-semibold fs-6 text-capitalize">Kruzo Aero Chair</h3>
-                                <span class="price">$78.00</span>
-                                <span
-                                    class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
-                                    <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
-                                </span>
-                            </a>
+                        <div class="row products">
+                            <div class="col-sm-6 col-md-4 mb-3">
+                                <div class="product-item text-center position-relative">
+                                    <a href="cart.html" class="d-flex flex-column product">
+                                        <img src="./assets/images/shop/product-1.webp"
+                                            class="img-fluid mb-4 product-image position-relative" alt="product image">
+                                        <h3 class="product-name gray-title fw-semibold fs-6 text-capitalize">Nordic Chair</h3>
+                                        <span class="price">$50.00</span>
+                                        <span
+                                            class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
+                                            <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mb-3">
+                                <div class="product-item text-center position-relative">
+                                    <a href="cart.html" class="d-flex flex-column product">
+                                        <img src="./assets/images/shop/product-2.webp"
+                                            class="img-fluid mb-4 product-image position-relative" alt="product image">
+                                        <h3 class="product-name gray-title fw-semibold fs-6 text-capitalize">Kruzo Aero Chair</h3>
+                                        <span class="price">$78.00</span>
+                                        <span
+                                            class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
+                                            <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mb-3">
+                                <div class="product-item text-center position-relative">
+                                    <a href="cart.html" class="d-flex flex-column product">
+                                        <img src="./assets/images/shop/product-3.webp"
+                                            class="img-fluid mb-4 product-image position-relative" alt="product image">
+                                        <h3 class="product-name gray-title fw-semibold fs-6 text-capitalize">Ergonomic Chair</h3>
+                                        <span class="price">$43.00</span>
+                                        <span
+                                            class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
+                                            <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mb-3">
+                                <div class="product-item text-center position-relative">
+                                    <a href="cart.html" class="d-flex flex-column product">
+                                        <img src="./assets/images/shop/product-1.webp"
+                                            class="img-fluid mb-4 product-image position-relative" alt="product image">
+                                        <h3 class="product-name gray-title fw-semibold fs-6 text-capitalize">Nordic Chair</h3>
+                                        <span class="price">$50.00</span>
+                                        <span
+                                            class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
+                                            <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mb-3">
+                                <div class="product-item text-center position-relative">
+                                    <a href="cart.html" class="d-flex flex-column product">
+                                        <img src="./assets/images/shop/product-1.webp"
+                                            class="img-fluid mb-4 product-image position-relative" alt="product image">
+                                        <h3 class="product-name gray-title fw-semibold fs-6 text-capitalize">Nordic Chair</h3>
+                                        <span class="price">$50.00</span>
+                                        <span
+                                            class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
+                                            <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mb-3">
+                                <div class="product-item text-center position-relative">
+                                    <a href="cart.html" class="d-flex flex-column product">
+                                        <img src="./assets/images/shop/product-2.webp"
+                                            class="img-fluid mb-4 product-image position-relative" alt="product image">
+                                        <h3 class="product-name gray-title fw-semibold fs-6 text-capitalize">Kruzo Aero Chair</h3>
+                                        <span class="price">$78.00</span>
+                                        <span
+                                            class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
+                                            <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mb-3">
+                                <div class="product-item text-center position-relative">
+                                    <a href="cart.html" class="d-flex flex-column product">
+                                        <img src="./assets/images/shop/product-3.webp"
+                                            class="img-fluid mb-4 product-image position-relative" alt="product image">
+                                        <h3 class="product-name gray-title fw-semibold fs-6 text-capitalize">Ergonomic Chair</h3>
+                                        <span class="price">$43.00</span>
+                                        <span
+                                            class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
+                                            <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mb-3">
+                                <div class="product-item text-center position-relative">
+                                    <a href="cart.html" class="d-flex flex-column product">
+                                        <img src="./assets/images/shop/product-1.webp"
+                                            class="img-fluid mb-4 product-image position-relative" alt="product image">
+                                        <h3 class="product-name gray-title fw-semibold fs-6 text-capitalize">Nordic Chair</h3>
+                                        <span class="price">$50.00</span>
+                                        <span
+                                            class="plus-icon bottom-0 text-white mx-auto d-flex justify-content-center align-items-center mt-3">
+                                            <img src="./assets/images/icons/cross.svg" class="img-fluid" alt="cross">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <nav>
                         <ul class="pagination justify-content-center my-4">
-                            <li class="page-item disabled"><a class="page-link text-bg-secondary" href="#" aria-label="Previous"><span
-                                        aria-hidden="true">«</span></a></li>
-                            <li class="page-item active"><a class="page-link text-secondary bg-transparent" href="#">1</a></li>
+                            <li class="page-item disabled"><a class="page-link text-bg-secondary" href="#"
+                                    aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                            <li class="page-item active"><a class="page-link text-secondary bg-transparent"
+                                    href="#">1</a>
+                            </li>
                             <li class="page-item"><a class="page-link text-secondary bg-transparent" href="#">2</a></li>
                             <li class="page-item"><a class="page-link text-secondary bg-transparent" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link text-bg-secondary" href="#" aria-label="Next"><span
-                                        aria-hidden="true">»</span></a></li>
+                            <li class="page-item"><a class="page-link text-bg-secondary" href="#"
+                                    aria-label="Next"><span aria-hidden="true">»</span></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -322,6 +418,7 @@
                     </ul>
                 </div>
             </div>
+        </div>
     </footer>
     <!-- footer ends -->
 
