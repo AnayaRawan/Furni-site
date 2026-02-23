@@ -23,6 +23,10 @@ a {
 .green-text {
   color: var(--custom-green-color);
 }
+.bg-green {
+  background-color: var(--custom-green-color) !important;
+  border: var(--custom-green-color);
+}
 .btn {
   font-weight: 600;
   padding: 12px 30px;
@@ -206,7 +210,7 @@ a {
   border-color: var(--custom-green-color);
   color: white !important;
 }
-.pagination .page-link:focus{
+.pagination .page-link:focus {
   box-shadow: none;
 }
 /* Why Choose Us section styles */
@@ -424,7 +428,7 @@ a {
   color: var(--custom-gray-color);
 }
 .footer .footer-links li a:hover {
-    color: rgba(47, 47, 47, 0.5);
+  color: rgba(47, 47, 47, 0.5);
 }
 /* contact us section */
 .contact-info i {
@@ -571,27 +575,33 @@ input[type="number"]::-webkit-outer-spin-button {
 .price-range {
   accent-color: #4caf50;
 }
-.filter-col{
+.filter-col {
   background-color: #e8e2d877;
 }
 
 /* product page */
-.checked{
+.checked {
   color: orange;
 }
-.product-details .product-info .fShipp{
+.product-details .product-info .fShipp {
   text-shadow: 4px 4px 10px #87ada0;
 }
-.product-details .product-info input{
+.product-details .product-info input {
   max-width: 50px;
   background-color: transparent;
   border: 0;
   text-align: center;
   font-size: 18px;
 }
-.product-details .product-info .quantity button{
+.product-details .product-info .quantity button {
   font-size: 18px;
   border: 0;
-  padding:0 10px;
+  padding: 0 10px;
   background-color: rgba(130, 150, 157, 0.678);
+}
+
+/* login */
+
+.login {
+  background-color: #d8e2dc;
 }
